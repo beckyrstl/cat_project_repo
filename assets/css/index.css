@@ -4,15 +4,50 @@ light grey - #eeeee
 teal - #00897f
 orange - #f26522 */
 
-body {
-  margin: 0;
-}
-
-
 /* On devices wider than 660px */
 @media(min-width: 660px) {
 }
 
 /* On devices wider than 940px */
 @media(min-width: 940px) {
+}
+
+body {
+  margin: 0;
+  color: #323232;
+}
+
+.splash {
+  margin-bottom: 80px;
+  width: 100%;
+}
+
+h1 {
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 1.875em;
+  text-align: center;
+}
+
+h3 {
+  font-family: 'PT Serif', serif;
+  font-size: 1em
+}
+
+.main h3 {
+  margin: 45px 25% 80px 25%;
+  line-height: 200%;
+}
+
+footer {
+  background-color: #00897f;
+  height: 125px;
+  margin: auto;
+  line-height: 125px;
+  margin-top: -12px;
+}
+
+footer h1 {
+  font-family: "PT Sans Narrow", sans-serif;
+  font-size: 1.25em;
+  color: #eeeeee;
 }
