@@ -4,17 +4,56 @@ light grey - #eeeee
 teal - #00897f
 orange - #f26522 */
 
-/* On devices wider than 660px */
-@media(min-width: 660px) {
-}
-
-/* On devices wider than 940px */
-@media(min-width: 940px) {
+/* CSS reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	vertical-align: baseline;
 }
 
 body {
   margin: 0;
+  padding: 0;
+}
+
+.nav {
+  line-height: 60px
+}
+
+.nav h1 {
+  display: inline;
+  float: left;
+  margin-left: 25px;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 1.5em;
   color: #323232;
+  font-weight: bold;
+}
+
+.nav ul {
+  float: right;
+}
+
+.nav li {
+  display: inline;
+  font-family: "PT Sans Regular", sans-serif;
+  font-size: .9em;
+  color: #323232;
+  text-transform: uppercase;
 }
 
 .splash {
@@ -26,16 +65,61 @@ h1 {
   font-family: 'PT Sans Narrow', sans-serif;
   font-size: 1.875em;
   text-align: center;
+  font-weight: bold;
+}
+
+h2 {
+  font-family: "PT Sans Narrow", sans-serif;
+  font-size: 1.5em;
+  color: #00897f;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 h3 {
-  font-family: 'PT Serif', serif;
-  font-size: 1em
+  font-family: "PT Serif", serif;
+  font-size: 1em;
+  line-height: 2em;
+  color: #323232;
 }
 
-.main h3 {
-  margin: 45px 25% 80px 25%;
-  line-height: 200%;
+p {
+  font-family: "PT Serif", serif;
+  font-size: .875em;
+  line-height: 1.75em;
+  color: #323232;
+}
+
+.main {
+  margin-left: auto;
+  margin-right: auto;
+  width: 600px;
+  margin-bottom: 80px;
+}
+
+.main h1 {
+  padding-bottom: 45px;
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+}
+
+.about div {
+  width: 225px;
+  height: 250px;
+  background-color: #eeeeee;
+  padding: 30px;
+}
+
+.about h2 {
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.aboutkat {
+  margin-right: 60px;
 }
 
 .roundimages {
@@ -48,6 +132,7 @@ h3 {
 .roundimages img {
   display: inline-block;
   border-radius: 50%;
+  width: 250px;
 }
 
 .cat1 {
@@ -60,16 +145,80 @@ h3 {
   margin-right: auto;
 }
 
+.getintouch {
+  background-color: #eeeeee;
+  text-align: center;
+}
+
+.getintouch h1 {
+  padding-top: 80px;
+  padding-bottom: 45px;
+}
+
+.getintouch h2 {
+  line-height: 2em;
+}
+
+.getintouch h3 {
+  text-align: left;
+}
+
+.contactcontainer {
+  display: flex;
+  align-content: center;
+}
+
+.hours {
+  background-color: #fff;
+  padding: 30px;
+  margin-left: auto;
+  margin-right: 60px;
+  margin-bottom: 80px;
+  width: 250px;
+}
+
+.contact {
+  background-color: #fff;
+  padding: 30px;
+  margin-bottom: 80px;
+  margin-right: auto;
+  width: 250px;
+}
+
+.address {
+  display: inline;
+  float: left;
+}
+
+a {
+  font-family: "PT Serif", serif;
+  font-weight: bold;
+  font-size: 1em;
+  color: #f26522;
+}
+
+.contact a {
+  float: right;
+  display: inline;
+}
+
 footer {
   background-color: #00897f;
   height: 125px;
-  margin: auto;
   line-height: 125px;
-  margin-top: -12px;
 }
 
 footer h1 {
   font-family: "PT Sans Narrow", sans-serif;
   font-size: 1.25em;
   color: #eeeeee;
+  font-weight: bold;
+}
+
+/* On devices wider than 660px */
+@media(min-width: 660px) {
+}
+
+/* On devices wider than 940px */
+@media(min-width: 940px) {
 }
