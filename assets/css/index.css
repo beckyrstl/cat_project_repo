@@ -31,13 +31,13 @@ body {
 }
 
 .nav {
-  line-height: 60px
+  line-height: 60px;
 }
 
 .nav h1 {
   display: inline;
   float: left;
-  margin-left: 25px;
+  margin-left: 2%;
   font-family: 'PT Sans Narrow', sans-serif;
   font-size: 1.5em;
   color: #323232;
@@ -93,7 +93,7 @@ p {
 .main {
   margin-left: auto;
   margin-right: auto;
-  width: 600px;
+  width: 50%;
   margin-bottom: 80px;
 }
 
@@ -122,6 +122,8 @@ p {
   margin-right: 60px;
 }
 
+/* Round Cat Images */
+
 .roundimages {
   display: block;
   text-align: center;
@@ -132,7 +134,8 @@ p {
 .roundimages img {
   display: inline-block;
   border-radius: 50%;
-  width: 250px;
+  width: 20%;
+	min-width: 175px;
 }
 
 .cat1 {
@@ -144,6 +147,8 @@ p {
   margin-left: 55px;
   margin-right: auto;
 }
+
+/* Side by Side Contact Boxes */
 
 .getintouch {
   background-color: #eeeeee;
@@ -215,10 +220,54 @@ footer h1 {
   font-weight: bold;
 }
 
-/* On devices wider than 660px */
-@media(min-width: 660px) {
-}
 
-/* On devices wider than 940px */
-@media(min-width: 940px) {
+
+@media screen and (max-width: 660px){
+	.about {
+	  display: block;
+
+	}
+
+	.aboutmavis {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.aboutkat {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.roundimages img:first-child {
+		display: none;
+	}
+
+	.roundimages img:nth-child(2) {
+		display: none;
+	}
+
+	.contactcontainer {
+		display: block;
+		height: 70%;
+	}
+
+	.getintouch h1 {
+		display: none;
+	}
+
+	.hours {
+		margin-left: auto;
+		margin-right: auto;
+		background-color: #eeeeee;
+		padding: 10px;
+
+	}
+
+	.contact {
+		margin-left: auto;
+		margin-right: auto;
+		background-color: #eeeeee;
+		padding: 10px;
+	}
+
 }
