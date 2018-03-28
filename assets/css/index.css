@@ -58,7 +58,7 @@ body {
 	padding-right: 15px;
 }
 
-.banner {
+#banner {
 	background-image: url('../images/kats-hero.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -228,7 +228,7 @@ footer h1 {
   font-weight: bold;
 }
 
-.map {
+#map {
 	background-image: url('../images/kats-map.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -295,7 +295,6 @@ footer h1 {
 		background-color: #eeeeee;
 		padding: 10px;
 		margin-bottom: 10px;
-
 	}
 
 	.contact {
